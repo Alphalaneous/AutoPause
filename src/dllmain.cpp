@@ -14,6 +14,7 @@ bool newWindowProcSet = false;
 
 LRESULT CALLBACK nWindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
     switch (msg) {
+    case WM_ENTERSIZEMOVE:
     case WM_KILLFOCUS:
         
         gd::PlayLayer* playLayer = gd::PlayLayer::get();
